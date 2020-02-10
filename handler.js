@@ -1,7 +1,11 @@
 var querystring = require("querystring");
 
+// shows the pages correlating to the requested paths, w/ necessary data
+
+// shows the home page
 function home(response, data){
     console.log("Executing 'home' handler");
+    // Image function does not work
     // loadImage("profile_picture.jpeg")
     response.writeHead(200, {  
         'Content-Type': 'text/html'  
@@ -10,8 +14,10 @@ function home(response, data){
     response.end();  
 }
 
+// shows the biography page
 function biography(response,data){
     console.log("Executing 'biography' handler");
+    // Image function does not work
     // loadImage("family_picture.jpeg")
     response.writeHead(200, {  
         'Content-Type': 'text/html'  

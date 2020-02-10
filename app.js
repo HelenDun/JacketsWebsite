@@ -8,4 +8,5 @@ handle['/'] = handler.home;
 handle['/home.html'] = handler.home;
 handle['/biography.html'] = handler.biography;
 
+// starts the website through the server module
 server.startServer(router.route,handle);
