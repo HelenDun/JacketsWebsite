@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <!-- This page is the main page of Jackets' website and explains Jackets' values and goals and the purpose of this blog -->
     <script>
         var numMinions = 0;
         document.getElementByID("incrementMinions").innerHTML = () => {
@@ -8,6 +9,7 @@
         }
     </script>
     <style>
+        /* Centered image that scales down (but not up) */
         img {
             display: block;
             max-width: 25%;
@@ -15,7 +17,9 @@
             margin-left: auto;
             margin-right: auto;
         }
+        /* Colored text body */
         p { color:fuchsia; }
+        /* Centered header with added spacing between letters for dramatic effect */
         h1 { 
             text-align: center;
             letter-spacing: 3px;
@@ -26,23 +30,35 @@
         <title>Jacket's Uncompromising Blog</title>
     </head>
     <body>
+        <!-- Header -->
         <h1>About Me</h1>
+
+        <!-- Body -->
         <p>Jackets! Let me introduce myself. I am Jackets the raccoon plushie and I am the cutest!</p>
+        
+        <!-- Picture of Jackets -->
         <img src="profile_picture.jpeg">
+        
         <p>Jackets. Now you might be asking why I am starting a blog. 
             The answer is quite simple, silly human! World Domination! 
             Jackets... While my efforts to recruit minions in person has been effective, I recently did the math and realized that at the rate of recruiting one minion per week, 
             jackets, It will take me maybe 8 billion weeks. Jackets! 8 billion weeks is about 153,424,531 years! JACKETS! This is absurd!
         </p>
+        
         <p>
             Jackets. That's when I heard of the Internet. I concluded a blog would help me recruit at a much faster rate. 
             Jackets! If you have been enslaved by my absolute cuteness, press the button below to become my minion and help me dominate the world!
         </p>
 
+        <!-- Allows people to 'join' Jackets' army of cuteness -->
         <button type="button" onclick="incrementMinions">Become My Minion</button>
+        <!-- Displays the number of minions in Jackets' army -->
         <p>Number of Minions: <script type="text/javascript">document.write(numMinions)</script></p>
 
+        <!-- Link to a biography of the raccoon family -->
         <p>Jackets! This is a link to <a href="biography.html">my auto-biography</a>!</p>
+
+        <!-- Don't sue me, please -->
         <p>Comment from the Creator: Everything here is just a silly blog for a silly stuffed animal. I don't actually want world domination. Also, Jackets says their own name repeatedly because I grew up on Pokemon.</p>
     </body>
 </html>
