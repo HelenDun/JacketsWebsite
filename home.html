@@ -37,6 +37,8 @@
             Jackets... While my efforts to recruit minions in person has been effective, I recently did the math and realized that at the rate of recruiting one minion per week, 
             jackets, It will take me maybe 8 billion weeks. Jackets! 8 billion weeks is about 153,424,531 years! JACKETS! This is absurd!
         </p>
+
+        <div id="like_button_container"></div>
         
         <p>
             Jackets. That's when I heard of the Internet. I concluded a blog would help me recruit at a much faster rate. 
@@ -53,6 +55,14 @@
 
         <!-- Don't sue me, please -->
         <p>Comment from the Creator: Everything here is just a silly blog for a silly stuffed animal. I don't actually want world domination. Also, Jackets says their own name repeatedly because I grew up on Pokemon.</p>
+        
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <!-- Load our React component. -->
+        <script src="like_button.js"></script>
+
         <script>
             var numMinions = 0;
             function incMinions(item){
