@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
     <!-- This page is the main page of Jackets' website and explains Jackets' values and goals and the purpose of this blog -->
-    <script>
-        var numMinions = 0;
-        document.getElementByID("incrementMinions").innerHTML = () => {
-            numMinions += 1;
-            document.getElementByID("numMinions").innerHTML = numMinions;
-        }
-    </script>
     <style>
         /* Centered image that scales down (but not up) */
         img {
@@ -51,14 +44,21 @@
         </p>
 
         <!-- Allows people to 'join' Jackets' army of cuteness -->
-        <button type="button" onclick="incrementMinions">Become My Minion</button>
+        <button onclick="incMinions()">Become My Minion</button>
         <!-- Displays the number of minions in Jackets' army -->
-        <p>Number of Minions: <script type="text/javascript">document.write(numMinions)</script></p>
+        <p>Number of Minions: <scan id="numMinions">0</scan></p>
 
         <!-- Link to a biography of the raccoon family -->
         <p>Jackets! This is a link to <a href="biography.html">my auto-biography</a>!</p>
 
         <!-- Don't sue me, please -->
         <p>Comment from the Creator: Everything here is just a silly blog for a silly stuffed animal. I don't actually want world domination. Also, Jackets says their own name repeatedly because I grew up on Pokemon.</p>
+        <script>
+            var numMinions = 0;
+            function incMinions(item){
+                numMinions += 1;
+                document.getElementById("numMinions").innerHTML = numMinions;
+            }
+        </script>
     </body>
 </html>
